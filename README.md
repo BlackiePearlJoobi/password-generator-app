@@ -45,8 +45,8 @@ Whether you're a developer seeking to extend the functionality or a user needing
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub repo](https://github.com/BlackiePearlJoobi/password-generator-app.git)
+- Live Site URL: [GitHub Pages](https://blackiepearljoobi.github.io/password-generator-app/)
 
 ## My process
 
