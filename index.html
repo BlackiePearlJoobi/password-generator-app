@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Generate strong and secure passwords with customizable length and character options. Try this easy-to-use password generator!"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Password generator app</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main>
+        <header>
+          <h1>Password Generator</h1>
+        </header>
+        <div class="result-container">
+          <output id="result">P4$5W0rD!</output>
+          <div class="copier-container">
+            <span id="copied-sign"></span>
+            <button id="copy-btn" aria-label="Copy password to clipboard">
+              <img
+                class="copy-icon"
+                src="./assets/images/icon-copy.svg"
+                alt="copy icon"
+              />
+            </button>
+          </div>
+        </div>
+        <section class="generator-container">
+          <div class="counter-container">
+            <div class="counter-output-container">
+              <label for="slider" class="counter-header">Character Length</label
+              ><output id="counter" for="slider">10</output>
+            </div>
+            <input type="range" id="slider" min="1" max="30" value="10" />
+          </div>
+          <ul class="inclusion-options">
+            <li>
+              <input type="checkbox" class="checkbox-hidden" />
+              <div class="checkbox" id="uppercase" tabindex="0">
+                <img
+                  class="check-icon"
+                  src="./assets/images/icon-check.svg"
+                  alt="include this option"
+                />
+              </div>
+              <span class="option-label">Include Uppercase Letters</span>
+            </li>
+            <li>
+              <input type="checkbox" class="checkbox-hidden" />
+              <div class="checkbox" id="lowercase" tabindex="0">
+                <img
+                  class="check-icon"
+                  src="./assets/images/icon-check.svg"
+                  alt="include this option"
+                />
+              </div>
+              <span class="option-label">Include Lowercase Letters</span>
+            </li>
+            <li>
+              <input type="checkbox" class="checkbox-hidden" />
+              <div class="checkbox" id="numbers" tabindex="0">
+                <img
+                  class="check-icon"
+                  src="./assets/images/icon-check.svg"
+                  alt="include this option"
+                />
+              </div>
+              <span class="option-label">Include Numbers</span>
+            </li>
+            <li>
+              <input type="checkbox" class="checkbox-hidden" />
+              <div class="checkbox" id="symbols" tabindex="0">
+                <img
+                  class="check-icon"
+                  src="./assets/images/icon-check.svg"
+                  alt="include this option"
+                />
+              </div>
+              <span class="option-label">Include Symbols</span>
+            </li>
+          </ul>
+          <div class="indicator-container">
+            <span class="indicator-label">STRENGTH</span>
+            <div class="indicator-wrapper">
+              <span id="strength"></span>
+              <div class="rating-bar"></div>
+              <div class="rating-bar"></div>
+              <div class="rating-bar"></div>
+              <div class="rating-bar"></div>
+              <div class="rating-bar"></div>
+            </div>
+          </div>
+          <button id="generate-btn" type="button">
+            GENERATE<img
+              class="arrow-icon"
+              src="./assets/images/icon-arrow-right.svg"
+              alt="Generate password button icon"
+            />
+          </button>
+        </section>
+      </main>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            aria-label="Learn more about challenges on frontendmentor.io"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            href="https://www.frontendmentor.io/profile/BlackiePearlJoobi"
+            aria-label="Visit BlackiePearlJoobi's developer profile on frontendmentor.io"
+            >BlackiePearlJoobi</a
+          >.
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
