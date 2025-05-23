@@ -320,8 +320,9 @@ footer {
 
 @media (min-width: 641px) {
   main {
+    width: 540px;
     max-height: 696px;
-    margin: auto 5%;
+    margin: auto 0;
 
     header {
       h1 {
