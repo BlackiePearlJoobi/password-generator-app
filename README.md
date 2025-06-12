@@ -1,4 +1,4 @@
-# 🔑 Password Generator App
+# Password Generator App
 
 This project is a customizable password generator built with TypeScript and modern web technologies. It enables users to create secure, randomized passwords by allowing them to:
 
