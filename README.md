@@ -40,8 +40,8 @@ Whether you're a developer seeking to extend the functionality or a user needing
 
 ### Screenshot
 
-![](./assets/images/Screenshot-1.jpg)
-![](./assets/images/Screenshot-2.jpg)
+![](assets/images/Screenshot-1.jpg)
+![](assets/images/Screenshot-2.jpg)
 
 ### Links
 
