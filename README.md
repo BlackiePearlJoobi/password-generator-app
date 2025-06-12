@@ -1,4 +1,4 @@
-# 🔑 Password Generator App 🔑
+# 🔑 Password Generator App
 
 This project is a customizable password generator built with TypeScript and modern web technologies. It enables users to create secure, randomized passwords by allowing them to:
 
@@ -40,8 +40,8 @@ Whether you're a developer seeking to extend the functionality or a user needing
 
 ### Screenshot
 
-![](assets/images/Screenshot-1.jpg)
-![](assets/images/Screenshot-2.jpg)
+![Screenshot - strong](assets/images/Screenshot_1.jpg)
+![Screenshot - weak](assets/images/Screenshot_2.jpg)
 
 ### Links
 
@@ -62,9 +62,9 @@ Whether you're a developer seeking to extend the functionality or a user needing
 
 #### HTML
 
-1. Using <output> for Dynamic Data
+1. Using `<output>` for Dynamic Data
 
-   - Using the <output> tag instead of using a <div> or <span> for displaying the generated password, explicitly communicating that the value is computed, and making it more meaningful for browsers and assistive devices.
+   - Using the `<output>` tag instead of using a `<div>` or `<span>` for displaying the generated password, explicitly communicating that the value is computed, and making it more meaningful for browsers and assistive devices.
 
 ```html
 <div class="result-container">
@@ -77,39 +77,39 @@ Whether you're a developer seeking to extend the functionality or a user needing
 
 2. Enhancing Accessibility with ARIA and Keyboard Support
 
-   - Added aria-label to buttons (like the copy button) for better screen reader support.
+   - Added `aria-label` to buttons (like the copy button) for better screen reader support.
 
-   - Used tabindex="0" on custom checkboxes to make them keyboard accessible.
+   - Used `tabindex="0"` on custom checkboxes to make them keyboard accessible.
 
-   - Linked <label> elements to inputs using the for attribute, improving form usability.
+   - Linked `<label>` elements to inputs using the for attribute, improving form usability.
 
 #### CSS
 
 1. Using CSS Variables for Scalability
 
-   - Defined global CSS variables (--font-size-1, --gray-800, --green, etc.) within :root to ensure a consistent and manageable theme.
+   - Defined global CSS variables (`--font-size-1, --gray-800, --green`, etc.) within `:root` to ensure a consistent and manageable theme.
 
-   - Applied font size and line height variables for better text uniformity across breakpoints.
+   - Applied `font-size` and `line-height` variables for better text uniformity across breakpoints.
 
 2. Accessibility & Readability Improvements
 
-   - Ensured readable color contrasts (var(--gray-200) for text, var(--gray-800) for backgrounds).
+   - Ensured readable color contrasts (`var(--gray-200)` for text, `var(--gray-800)` for backgrounds).
 
-   - Styled interactive elements (#copy-btn, .checkbox, #generate-btn) for clear visual feedback.
+   - Styled interactive elements (`#copy-btn`, `.checkbox`, `#generate-btn`) for clear visual feedback.
 
 3. Flexbox for Layout Control
 
-   - Implemented display: flex and flex-direction: column across major containers (.wrapper, .generator-container) for responsive design.
+   - Implemented display: `flex` and `flex-direction: column` across major containers (`.wrapper`, `.generator-container`) for responsive design.
 
 4. Styling Interactive Components
 
-   - Checkboxes & Toggles: Customized .checkbox-hidden to ensure checkboxes don’t appear visually, using .checkbox as a styled alternative with an icon.
+   - Checkboxes & Toggles: Customized `.checkbox-hidden` to ensure checkboxes don’t appear visually, using `.checkbox` as a styled alternative with an icon.
 
    - Slider Styling:
 
-     - Applied &::-webkit-slider-thumb and &::-moz-range-thumb for cross-browser support.
+     - Applied `&::-webkit-slider-thumb` and `&::-moz-range-thumb` for cross-browser support.
 
-     - Used var(--track-fill) to dynamically update the track color.
+     - Used `var(--track-fill)` to dynamically update the track color.
 
 ```css
 #slider {
@@ -138,35 +138,35 @@ Whether you're a developer seeking to extend the functionality or a user needing
 
 5. Responsive Design Considerations
 
-   - Media Queries (@media (min-width: 641px)) adjust:
+   - Media Queries (`@media (min-width: 641px)`) adjust:
 
-     - Font sizes (var(--font-size-2) for larger screens).
+     - Font sizes (`var(--font-size-2)` for larger screens).
 
-     - Layout positioning (margin: auto 5% for the main container).
+     - Layout positioning (`margin: auto 5%` for the main container).
 
-     - Button sizes (height: 72px for wider screens).
+     - Button sizes (`height: 72px` for wider screens).
 
-   - Ensured min-height: 100vh in .wrapper for full viewport coverage, preventing layout cutoffs.
+   - Ensured `min-height: 100vh` in `.wrapper` for full viewport coverage, preventing layout cutoffs.
 
 #### Typescript
 
 1. Strong Typing for Reliability
 
-   - Defined explicit types (type characters = (string | number)[]) to ensure type safety and avoid runtime errors.
+   - Defined explicit types (`type characters = (string | number)[]`) to ensure type safety and avoid runtime errors.
 
-   - Used TypeScript’s Record<key, value> type for managing inclusion options dynamically (Record<OptionName, boolean>), improving readability and scalability.
+   - Used TypeScript’s `Record<key, value>` type for managing inclusion options dynamically (`Record<OptionName, boolean>`), improving readability and scalability.
 
 2. Modular & Maintainable Code
 
    - followed a modular approach with functions dedicated to specific tasks, improving readability and efficiency.
 
-   - setSlider(currentLength: number, maxLength: number)
+   - `setSlider(currentLength: number, maxLength: number)`
 
-     - Dynamically adjusts the slider track fill color using a percentage-based CSS property (--track-fill).
+     - Dynamically adjusts the slider track fill color using a percentage-based CSS property (`--track-fill`).
 
      - Helps provide visual feedback when users adjust password length.
 
-   - rateStrength(password: (string | number)[]): [string, number]
+   - `rateStrength(password: (string | number)[]): [string, number]`
 
      - Evaluates password strength based on:
 
@@ -178,25 +178,25 @@ Whether you're a developer seeking to extend the functionality or a user needing
 
      - Returns a strength rating ("VERY WEAK", "WEAK", "MEDIUM", etc.), improving security awareness.
 
-   - updateIndicator(rating: number)
+   - `updateIndicator(rating: number)`
 
      - Adjusts visual indicators (colored bars) to reflect password strength.
 
      - Uses a switch-case structure to apply appropriate colors (red, orange, green, etc.), enhancing UX clarity.
 
-   - Refactored toggle functions into a single, reusable toggleOption() function to eliminate redundant logic.
+   - Refactored toggle functions into a single, reusable `toggleOption()` function to eliminate redundant logic.
 
 3. Event Handling & Accessibility
 
-   - Implemented try...catch for asynchronous password loading (loadCommonPasswords), preventing network-related errors.
+   - Implemented `try...catch` for asynchronous password loading (`loadCommonPasswords`), preventing network-related errors.
 
-   - Centralized event listener assignments for checkboxes via .forEach(), reducing repetition.
+   - Centralized event listener assignments for checkboxes via `.forEach()`, reducing repetition.
 
 4. Improving Scalability
 
    - Structured logic to allow future enhancements, such as new password options or advanced strength algorithms.
 
-   - Ensured that modular functions (like rateStrength) make extending security features easy.
+   - Ensured that modular functions (like `rateStrength`) make extending security features easy.
 
 ### Continued development
 
@@ -204,7 +204,7 @@ As the project evolves, here are some planned improvements and enhancements:
 
 1. Advanced Password Strength Algorithm
 
-   - Enhance the rateStrength() function with entropy-based calculations, making strength assessments more accurate.
+   - Enhance the `rateStrength()` function with entropy-based calculations, making strength assessments more accurate.
 
    - Include an AI-driven password evaluator that suggests stronger alternatives when weak passwords are generated.
 
