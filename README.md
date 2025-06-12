@@ -77,11 +77,11 @@ Whether you're a developer seeking to extend the functionality or a user needing
 
 2. Enhancing Accessibility with ARIA and Keyboard Support
 
-- Added aria-label to buttons (like the copy button) for better screen reader support.
+   - Added aria-label to buttons (like the copy button) for better screen reader support.
 
-- Used tabindex="0" on custom checkboxes to make them keyboard accessible.
+   - Used tabindex="0" on custom checkboxes to make them keyboard accessible.
 
-- Linked <label> elements to inputs using the for attribute, improving form usability.
+   - Linked <label> elements to inputs using the for attribute, improving form usability.
 
 #### CSS
 
