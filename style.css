@@ -314,6 +314,10 @@ footer {
       &:visited {
         color: #a29bfe;
       }
+
+      &:hover {
+        color: var(--orange);
+      }
     }
   }
 }

@@ -21,8 +21,8 @@ This project is a customizable password generator built with TypeScript and mode
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
+- [Author](#author)
 
 ## Overview
 
@@ -234,11 +234,11 @@ Throughout the development of this project, the following resources were particu
 
 These references were instrumental in refining usability, accessibility, and security within the project.
 
+## Acknowledgments
+
+This is a solution to the [Password generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
 ## Author
 
 - Frontend Mentor - [@BlackiePearlJoobi](https://www.frontendmentor.io/profile/BlackiePearlJoobi)
 - devChallenges - [@Moonychan](https://devchallenges.io/profile/568d1c62-28c2-40d3-8772-cce03ae0c707)
-
-## Acknowledgments
-
-This is a solution to the [Password generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
