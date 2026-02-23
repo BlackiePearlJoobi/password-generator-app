@@ -184,16 +184,16 @@ const inclusionOptions: Record<OptionName, boolean> = {
 let optionCount = 4;
 
 const checkOption = (checkbox: HTMLElement): void => {
-  const checkIcon = checkbox.querySelector(".check-icon") as HTMLElement;
   checkbox.style.setProperty("background-color", "var(--green)");
   checkbox.style.setProperty("border", "none");
+  const checkIcon = checkbox.querySelector(".check-icon") as HTMLElement;
   checkIcon.style.setProperty("display", "block");
 };
 
 const uncheckOption = (checkbox: HTMLElement): void => {
-  const checkIcon = checkbox.querySelector(".check-icon") as HTMLElement;
   checkbox.style.setProperty("background-color", "var(--gray-800)");
   checkbox.style.setProperty("border", "2px solid var(--gray-200)");
+  const checkIcon = checkbox.querySelector(".check-icon") as HTMLElement;
   checkIcon.style.setProperty("display", "none");
 };
 
